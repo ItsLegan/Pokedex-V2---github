@@ -69,7 +69,7 @@ Las tarjetas se generan dinámicamente dependiendo de la búsqueda o filtro sele
 
 Puedes probar la aplicación directamente desde GitHub Pages:
 
-[Ver Pokédex][https://TU-USUARIO.github.io/TU-REPOSITORIO/](https://itslegan.github.io/Pokedex-V2---github/)
+[Ver Pokédex](https://TU-USUARIO.github.io/TU-REPOSITORIO/](https://itslegan.github.io/Pokedex-V2---github/)
 
 ## Aprendizaje
 
