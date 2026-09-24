@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador Pokemon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--Fuentes google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagenes/image.png" type="image/x-icon" />
+
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <input id="input" type="text" placeholder="Ingresa Un Pokemon" />
+        <button id="boton" type="button" class="btn btn-danger">Buscar</button>
+      </div>
+
+      <div class="header-center">
+        <h1 class="header-h1">POKEDEX</h1>
+      </div>
+
+      <div class="header-right"></div>
+    </header>
+
+    <main>
+      <div class="lista-pokemon">
+        <button id="botonNormal" class="btn btn-secondary boton">Normal</button>
+
+        <button id="botonFuego" class="btn btn-danger boton">Fire</button>
+
+        <button id="botonAgua" class="btn btn-primary boton">Water</button>
+
+        <button id="botonDragon" class="btn btn-warning boton">Dragon</button>
+
+        <button id="botonPsiquico" class="btn btn-info boton">Psychic</button>
+      </div>
+
+      <section id="contenedorPokemon">
+        <div class="contenido">
+          <h1 id="nombrePokemon" class="contenido-nombre">Nombre</h1>
+          <img id="imagenPokemon" src="" alt="" />
+          <p id="numeroPokemon" class="contenido-numero">Numero</p>
+          <p id="tipoPokemon" class="contenido-tipo">Tipo</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

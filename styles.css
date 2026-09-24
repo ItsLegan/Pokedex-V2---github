@@ -1,0 +1,217 @@
+/*Estilos generales*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "press start 2p";
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    background-image: url(https://preview.redd.it/1366x768-pokemon-forest-v-v0-3h3kdo2wqqy71.jpg?auto=webp&s=6f580320d808951afab3f17a4a4eb407f9b3e759);
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+/*Encabezado*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 100px;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    background-color: rgb(206, 11, 11);
+}
+
+.header-left,
+.header-center,
+.header-right{
+    flex: 1;
+}
+
+.header-left{
+    display: flex;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.header-center{
+    display: flex;
+    justify-content: center;
+}
+
+.header-h1{
+    color: white;
+    text-align: center;
+}
+
+/*Cuerpo pagina*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+/*Botones filtros*/
+
+.lista-pokemon{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+.boton{
+    margin: 10px;
+}
+
+/*Contenedor tarjetas*/
+
+#contenedorPokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+}
+
+/*Tarjetas*/
+
+.contenido{
+    width: 350px;
+    min-height: 500px;
+
+    background-color: rgba(255, 0, 0, 0.671);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 0 20px 5px black;
+
+    border: 2px solid white;
+
+    text-align: center;
+}
+
+.contenido-nombre{
+    color: white;
+    font-size: 24px;
+}
+
+.contenido-numero{
+    color: white;
+    font-size: 24px;
+
+    margin: 20px;
+}
+
+.contenido-tipo{
+    color: white;
+    font-size: 24px;
+}
+
+img{
+    width: 100%;
+    max-width: 250px;
+
+    height: auto;
+}
+
+input{
+      padding: 10px;
+    width: 220px;
+
+    height: 45px;
+
+    font-size: 12px;
+}
+
+input::placeholder{
+    font-size: 11px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-left,
+    .header-center,
+    .header-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-left{
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .header-h1{
+        font-size: 24px;
+    }
+
+    .lista-pokemon{
+        gap: 10px;
+    }
+
+    .contenido{
+        width: 90%;
+        min-height: 450px;
+    }
+
+    .contenido-nombre{
+        font-size: 18px;
+    }
+
+    .contenido-numero,
+    .contenido-tipo{
+        font-size: 18px;
+    }
+
+    img{
+        max-width: 180px;
+    }
+
+    input{
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
